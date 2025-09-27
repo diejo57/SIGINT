@@ -55,9 +55,7 @@ Open the script and set the following variables in the configuration section:
 ### 3. Execution Workflow
 
 1.  **First Run (Generate Plot):** Run the script from your terminal. It will load the data and generate a diagnostic plot named `k_distance_plot.png`. It will then stop.
-    ```bash
-    python your_script_name.py
-    ```
+ 
 2.  **Inspect and Update:** Open the `k_distance_plot.png` file. Look for the "elbow" of the curve and note the corresponding value on the Y-axis. This is your optimal `eps`. Update the `CHOSEN_EPS` variable in the script with this value.
 
 3.  **Second Run (Final Analysis):** Run the exact same script again. This time, because `CHOSEN_EPS` has been updated, the script will skip the plotting and perform the full analysis, printing a final report and saving the results to a CSV file.
